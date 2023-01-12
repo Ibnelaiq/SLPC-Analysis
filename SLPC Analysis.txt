@@ -1,0 +1,660 @@
+﻿I. Introduction:
+The paper presents research and results on the polarity classification of the verses of the holy Quran. The main goal of the analysis is the detection of the regularity of negative-polarised statements as falsely claimed over the internet (trend). Including an analysis of only 6 English-translation of the book, and its authors. [1]
+        The algorithm for sentence-level polarity detection used is TextBlob. [2] The data from the algorithm is divided into different intensity levels. However, when using sentences as the basic units  to which analysis is applied, it is always important to look at their semantic and morphological analysis. As expected the whole sentence is useful for the identification of sentence polarity rather than only words and their occurrence. Although this paper includes only sentence-level polarity classification, the inter-verses relations such as discourse relations are small factors in the sentence-level polarity classification analysis of (the Holy Quran), they aren’t ignored or left out but accepted as the original or chronological order of the Holy Quran. 
+
+
+II. Sentence-Level Polarity Classification  (SLPC)
+sentence-level polarity detection is to decide whether a given sentence expresses either an overall positive or negative opinion. Thus, all sentences to be classified are assumed to be subjective and carry either positive [+1], negative [-1], or neutral [0] overall polarity. Moreover, according to Wiegand et al. [2010] at the document level, text classification relies very much on redundancy and there are so many cues suggesting positive polarity is more likely than negative polarity. [3]
+        
+ 
+III. English Translation of The Holy Quran
+All translation data is exported from Islam-awakened [4] and the translators are selected from personal preference and are well-known in South Asia. Removing and minimizing the reader’s personal preference issues related to different sects or schools of Islam. [5] [6]
+ 
+IV. Algorithm for SLPC
+The algorithm is NOT trained or made on or with verses of The Holy Quran and it is the secondary objective of this paper to enlighten the un-bias analysis. The initial training data can be found online [7] The dedicated algorithm that is trained on verses of the Holy Quran will be biased from a Muslim’s point of view. That study will be addressed in the future. 
+        Sentence-level objectivity classification was included in this paper but removed after some consideration, keeping inter-verse relations and opinion values as the main objections. 
+
+
+V. Sentence-Level Subjectivity 
+Subjectivity classification classifies sentences into two classes: subjective and objective (Wiebe et al., 1999). An objective sentence expresses some factual information, while a subjective sentence usually gives personal views and opinions. From Muslims’ point of view, even the opinion mentioned in Holy Quran is a proper fact.
+        All sentence-level subjectivity classification data isn’t included in this paper but may be added in the future as a separate study. 
+
+
+
+
+VI. Polarity Classification
+
+
+The polarity of each verse lies between the range.
+* Negative  -1 
+* Neutral     0 
+* Positive   +1
+
+
+The values from the algorithm are categorized into several categories for better analysis and visual representation. 
+
+
+* Strongly Negative
+
+
+"Recall when you were fleeing without casting even a side glance at anyone, and the Messenger was calling out to you from the rear. Then Allah requited you by inflicting grief after grief upon you so as to instruct you neither to grieve for the losses you might suffer nor for the afflictions that might befall you. Allah knows all that you do". 
+(3:153)
+
+
+* Mildly Negative
+
+
+“Satan makes promises to them and fills them with vain hopes, but whatever he promises them is merely delusion”  
+(4:120)
+
+
+* Slightly Negative
+
+
+“And now you can see many of them taking the unbelievers (instead of the believers) for their allies. Indeed they have prepared evil for themselves. Allah is angry with them, and they shall abide in chastisement” 
+(5:80)
+
+
+* Neutral
+
+
+“By intoxicants and games of chance Satan only desires to create enmity and hatred between you, and to turn you away from the remembrance of Allah and from Prayer. Will you, then, desist”
+(5:91)
+        
+* Slightly Positive
+
+
+“Believers! Take heed of your own selves. If you are rightly guided, the error of he who strays will not harm you. To Allah will all of you return; then He will let all of you know what you did” 
+(5:105)
+
+
+
+
+
+
+
+
+* Mildly Positive
+
+
+“As for others, they prevent them from embracing the Truth; and themselves, they flee from it (so as to harm you). But they court their own ruin, although they do not realize it“ 
+(6:26)
+
+
+* Strongly Negative
+
+
+“And if there are some among you who believe in the message that I bear while some do not believe, have patience till Allah shall judge between us. He is the best of those who judge.”
+ (7:87)
+
+
+VII. SLPC Analysis on several translations
+  
+
+* Ahmed Raza Khan (Barelvi)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Fig 1:  All 6263 verses polarity count classification                                          Fig 2:  Histogram for 6263 verses polarity intensity 
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                  Fig 3:  Order wise 6263 verses polarity graph 
+  
+Fig 4:  Order wise 6263 verses polarity heatmap        
+________________
+  
+
+   * Dr. Mohammad Tahir-ul-Qadri  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Fig 5:  All 6263 verses polarity count classification                                          Fig 6:  Histogram for 6263 verses polarity intensity 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                             Fig 7:  Order wise 6263 verses polarity graph         
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Fig 8:  Order wise 6263 verses polarity heatmap        
+________________
+  
+
+      * Sayd Abul A'La Maududi  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Fig 9:  All 6263 verses polarity count classification                                          Fig 10:  Histogram for 6263 verses polarity intensity 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                             Fig 11:  Order wise 6263 verses polarity graph 
+        
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Fig 12:  Order wise 6263 verses polarity heatmap        
+________________
+  
+
+         * Muhammad Taqi Usmani  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Fig 13:  All 6263 verses polarity count classification                                          Fig 14:  Histogram for 6263 verses polarity intensity 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                             Fig 15:  Order wise 6263 verses polarity graph 
+        
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Fig 16:  Order wise 6263 verses polarity heatmap        
+
+
+________________
+  
+
+            * Umm Muhammad - Sahih International  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Fig 17:  All 6263 verses polarity count classification                                          Fig 18:  Histogram for 6263 verses polarity intensity 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                             Fig 19:  Order wise 6263 verses polarity graph 
+        
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Fig 20:  Order wise 6263 verses polarity heatmap        
+________________
+  
+
+               * T.B Irving  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           Fig 21:  All 6263 verses polarity count classification                                          Fig 22:  Histogram for 6263 verses polarity intensity 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                             Fig 23:  Order wise 6263 verses polarity graph 
+        
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Fig 24:  Order wise 6263 verses polarity heatmap        
+
+
+________________
+
+
+
+
+                  * Overall (Translations) Polarity Classification Count Comparison 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Fig 25:  Overall ( 6 Translations) Polarity Classification Count Comparison. 
+References:
+
+
+[1] Translators: 
+     1. Ahmed Raza Khan (Barelvi) 
+     2. Tahir Ul Qadri
+     3. Maulana Maududi
+     4. Muhammad Taqi Usmani
+     5. Umm Muhammad (Sahih International)
+     6. T . B . Irving
+[2] https://textblob.readthedocs.io/en/dev/
+[3] https://www.mff.cuni.cz/veda/konference/wds/proc/pdf11/WDS11_128_i3_Veselovska.pdf
+[4] https://www.islamawakened.com/index.php/our-database
+[5] https://en.wikipedia.org/wiki/Islamic_schools_and_branches
+[6] The Holy Quran (6:159) 
+[7] https://github.com/sloria/TextBlob/blob/eb08c120d34e908646731d60b4e4c6c1712ff63/textblob/en
+     /en-sentiment.xml
+
+
+
+
+
+
+________________
+
+
+By: Ahmed Ali         www.papersbykyuoma.com
+1/11/2023
