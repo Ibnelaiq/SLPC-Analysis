@@ -122,7 +122,7 @@ The values from the algorithm are categorized into several categories for better
 (6:26)
 
 
-* Strongly Negative
+* Strongly Positive
 
 
 “And if there are some among you who believe in the message that I bear while some do not believe, have patience till Allah shall judge between us. He is the best of those who judge.”
