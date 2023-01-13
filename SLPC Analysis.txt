@@ -1,18 +1,18 @@
 ﻿I. Introduction:
-The paper presents research and results on the polarity classification of the verses of the holy Quran. The main goal of the analysis is the detection of the regularity of negative-polarised statements as falsely claimed over the internet (trend). Including an analysis of only 6 English-translation of the book, and its authors. [1]
-        The algorithm for sentence-level polarity detection used is TextBlob. [2] The data from the algorithm is divided into different intensity levels. However, when using sentences as the basic units  to which analysis is applied, it is always important to look at their semantic and morphological analysis. As expected the whole sentence is useful for the identification of sentence polarity rather than only words and their occurrence. Although this paper includes only sentence-level polarity classification, the inter-verses relations such as discourse relations are small factors in the sentence-level polarity classification analysis of (the Holy Quran), they aren’t ignored or left out but accepted as the original or chronological order of the Holy Quran. 
+The paper presents research on the polarity classification of the verses of The Holy Quran. The main goal of this analysis is the detection of the regularity and occurrence of negative (polarized) statements for any group as (falsely) claimed over the internet (trend). Including only 6 English-translation of the book.[1]
+        The algorithm for sentence-level polarity detection used is TextBlob. [2] The data from the algorithm is divided into different intensity levels. However, when using sentences as the basic units to which analysis is applied, it is always important to look at their semantic and morphological analysis. As expected the whole sentence is useful for the identification of sentence polarity rather than only words and their occurrence. Although this paper includes only sentence-level polarity classification, the inter-verses relations such as discourse relations are small factors in the analysis, they aren’t ignored or left out but accepted as the original or (new) order and facts of the Holy Quran. 
 
 
 II. Sentence-Level Polarity Classification  (SLPC)
-sentence-level polarity detection is to decide whether a given sentence expresses either an overall positive or negative opinion. Thus, all sentences to be classified are assumed to be subjective and carry either positive [+1], negative [-1], or neutral [0] overall polarity. Moreover, according to Wiegand et al. [2010] at the document level, text classification relies very much on redundancy and there are so many cues suggesting positive polarity is more likely than negative polarity. [3]
+Sentence-level polarity detection is to decide whether a given sentence expresses either an overall positive or negative opinion. Thus, all sentences to be classified are assumed to be subjective and carry either positive [+1], negative [-1], or neutral [0] overall polarity. Moreover, according to Wiegand et al. [2010] at the document level, text classification relies very much on redundancy and there are so many cues suggesting positive polarity is more likely than negative polarity. [3]
         
  
 III. English Translation of The Holy Quran
-All translation data is exported from Islam-awakened [4] and the translators are selected from personal preference and are well-known in South Asia. Removing and minimizing the reader’s personal preference issues related to different sects or schools of Islam. [5] [6]
+All translation data is exported from Islam-awakened  [4] and the translators are selected from personal preference and are well-known in South Asia. Removing and minimizing the reader’s personal preference issues due to different sects or schools of Islam. [5] [6]
  
 IV. Algorithm for SLPC
 The algorithm is NOT trained or made on or with verses of The Holy Quran and it is the secondary objective of this paper to enlighten the un-bias analysis. The initial training data can be found online [7] The dedicated algorithm that is trained on verses of the Holy Quran will be biased from a Muslim’s point of view. That study will be addressed in the future. 
-        Sentence-level objectivity classification was included in this paper but removed after some consideration, keeping inter-verse relations and opinion values as the main objections. 
+        Sentence-level objectivity classification was included in this paper but removed after some consideration, keeping inter-verse relations and religious opinion values as the main causes. 
 
 
 V. Sentence-Level Subjectivity 
@@ -22,7 +22,52 @@ Subjectivity classification classifies sentences into two classes: subjective an
 
 
 
-VI. Polarity Classification
+
+
+VI. Sentence-Level Subjectivity (SLS) Data
+This paper included the subjectivity classification before, Following are the examples and results of sentence-level subjectivity classification analysis. Where [0.0] is very objective and [1.0] is very subjective.
+
+
+* Strongly Subjective
+
+
+“O Mankind, submit to your Lord Who created you and those who were before you; in this way, only      you may expect to save yourselves”
+ (2:21)
+
+
+* Strongly Objective
+
+
+“But if you do not do this, and you can never do this, then fear the Fire which has been prepared for the disbelievers and which shall have men and stones for fuel”
+ (2:24)
+
+
+* Neutral (Neither proper subjective nor objective) 
+
+
+“It is He Who has made the earth a bed for you and the sky a canopy; and it is He Who sends down rain from above for the growth of every kind of food products for your sustenance. So, when you know this, you should not set up equals to rank with Allah”
+ (2:22)
+
+
+But while checking these verses it is obvious that even subjective-classified verse is a fact and objective for Muslim readers, The algorithm classified these verses according to its training model made for English literature but not religious values and beliefs. The below analysis is totally based on the perspective separate from religious belief biases. 
+         The question here is how subjective and objective verses are classified, take a look at the above verses the objective one includes the phrase “But if you do not do this, and you can never do this” that is a fact as a sentence to some extents, and the subjective one includes “Submit to your Lord Who created you and those who were before you” it is considered as a "Fact” in Islam because it is mentioned in The Holy Quran, but we have the opposing opinions from people of different religion and belief.
+
+
+VII.SLS Analysis Conclusion 
+This was the reason the whole sentence-level subjectivity analysis of the verses of The Holy Quran isn’t mentioned in this paper, Although this test case can also be applied to polarity analysis because of the tone and words of the verses towards the opposition of Islam, So the analysis is based on the words and tone chosen in verses rather than a party to whom it may concern. 
+
+
+
+
+
+
+
+
+
+
+
+
+VII. Polarity Classification
 
 
 The polarity of each verse lies between the range.
@@ -66,10 +111,6 @@ The values from the algorithm are categorized into several categories for better
 
 “Believers! Take heed of your own selves. If you are rightly guided, the error of he who strays will not harm you. To Allah will all of you return; then He will let all of you know what you did” 
 (5:105)
-
-
-
-
 
 
 
@@ -656,5 +697,6 @@ References:
 ________________
 
 
-By: Ahmed Ali         www.papersbykyuoma.com
-1/11/2023
+Ahmed Ali
+        www.papersbykyuoma.com
+1/13/2023
