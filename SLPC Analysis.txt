@@ -1,14 +1,13 @@
 ﻿I. Introduction:
-The paper presents research on the polarity classification of the verses of The Holy Quran. The main goal of this analysis is the detection of the regularity and occurrence of negative (polarized) statements for any group as (falsely) claimed over the internet (trend). Including only 6 English-translation of the book.[1]
-        The algorithm for sentence-level polarity detection used is TextBlob. [2] The data from the algorithm is divided into different intensity levels. However, when using sentences as the basic units to which analysis is applied, it is always important to look at their semantic and morphological analysis. As expected the whole sentence is useful for the identification of sentence polarity rather than only words and their occurrence. Although this paper includes only sentence-level polarity classification, the inter-verses relations such as discourse relations are small factors in the analysis, they aren’t ignored or left out but accepted as the original or (new) order and facts of the Holy Quran. 
-
+The paper presents research on the polarity classification of the verses of The Holy Quran. The main goal of this analysis is to detect the regularity and occurrence of negative (polarized) statements as they are falsely claimed over the internet (trend). This research includes only 6 English translations of the book. [1]
+The algorithm used for sentence-level polarity detection is TextBlob. [2] The data from the algorithm is divided into different intensity levels. However, when using sentences as the basic units for analysis, it is important to also consider their semantic and morphological analysis. As expected, the whole sentence is useful for identifying sentence polarity, rather than just individual words and their occurrence. Although this paper includes only sentence-level polarity classification, inter-verse relations such as discourse relations are small factors in the analysis. They are not ignored but accepted as the original or new order and facts of The Holy Quran.
 
 II. Sentence-Level Polarity Classification  (SLPC)
 Sentence-level polarity detection is to decide whether a given sentence expresses either an overall positive or negative opinion. Thus, all sentences to be classified are assumed to be subjective and carry either positive [+1], negative [-1], or neutral [0] overall polarity. Moreover, according to Wiegand et al. [2010] at the document level, text classification relies very much on redundancy and there are so many cues suggesting positive polarity is more likely than negative polarity. [3]
         
  
 III. English Translation of The Holy Quran
-All translation data is exported from Islam-awakened  [4] and the translators are selected from personal preference and are well-known in South Asia. Removing and minimizing the reader’s personal preference issues due to different sects or schools of Islam. [5] [6]
+All translation data is exported from Islam-awakened  [4] and the translators are selected from personal preference and are well-known in South Asia. Removing and minimizing the reader’s preference issues due to different sects or schools of Islam. [5] [6]
  
 IV. Algorithm for SLPC
 The algorithm is NOT trained or made on or with verses of The Holy Quran and it is the secondary objective of this paper to enlighten the un-bias analysis. The initial training data can be found online [7] The dedicated algorithm that is trained on verses of the Holy Quran will be biased from a Muslim’s point of view. That study will be addressed in the future. 
@@ -49,12 +48,12 @@ This paper included the subjectivity classification before, Following are the ex
  (2:22)
 
 
-But while checking these verses it is obvious that even subjective-classified verse is a fact and objective for Muslim readers, The algorithm classified these verses according to its training model made for English literature but not religious values and beliefs. The below analysis is totally based on the perspective separate from religious belief biases. 
-         The question here is how subjective and objective verses are classified, take a look at the above verses the objective one includes the phrase “But if you do not do this, and you can never do this” that is a fact as a sentence to some extents, and the subjective one includes “Submit to your Lord Who created you and those who were before you” it is considered as a "Fact” in Islam because it is mentioned in The Holy Quran, but we have the opposing opinions from people of different religion and belief.
+It is obvious that even verses classified as subjective are considered facts and objective by Muslim readers. The algorithm classifies these verses based on its training model, which was created using English literature, not religious values and beliefs. The analysis below is based on a perspective that is separate from religious beliefs and biases. 
+         In the above verses, the very-objectively-classified verse includes the phrase "But if you do not do this, and you can never do this" which is considered a fact to some extent. The very-subjectively-classified verse includes "Submit to your Lord Who created you and those who were before you". It is considered a fact or objective in Islam because it is mentioned in The Holy Quran. However, there are opposing opinions from people of different religions and beliefs.
 
 
 VII.SLS Analysis Conclusion 
-This was the reason the whole sentence-level subjectivity analysis of the verses of The Holy Quran isn’t mentioned in this paper, Although this test case can also be applied to polarity analysis because of the tone and words of the verses towards the opposition of Islam, So the analysis is based on the words and tone chosen in verses rather than a party to whom it may concern. 
+This is the reason why the whole sentence-level subjectivity analysis of the verses of The Holy Quran isn't mentioned in this paper. Although this test case can be applied to polarity analysis due to the tone and words of the verses used towards the opposition of Islam or wrongdoers, the analysis is only based on the words and tone used in the verses, rather than on a party to whom it may concern. 
 
 
 
