@@ -24,7 +24,7 @@ Subjectivity classification classifies sentences into two classes: subjective an
 
 
 VI. Sentence-Level Subjectivity (SLS) Data
-This paper included the subjectivity classification before, Following are the examples and results of sentence-level subjectivity classification analysis. Where [0.0] is very objective and [1.0] is very subjective.
+Following are the examples and results of sentence-level subjectivity classification analysis. Where [0.0] is very objective and [1.0] is very subjective.
 
 
 * Strongly Subjective
@@ -49,11 +49,11 @@ This paper included the subjectivity classification before, Following are the ex
 
 
 It is obvious that even verses classified as subjective are considered facts and objective by Muslim readers. The algorithm classifies these verses based on its training model, which was created using English literature, not religious values and beliefs. The analysis below is based on a perspective that is separate from religious beliefs and biases. 
-         In the above verses, the very-objectively-classified verse includes the phrase "But if you do not do this, and you can never do this" which is considered a fact to some extent. The very-subjectively-classified verse includes "Submit to your Lord Who created you and those who were before you". It is considered a fact or objective in Islam because it is mentioned in The Holy Quran. However, there are opposing opinions from people of different religions and beliefs.
+         In the above verses, the very-objectively-classified verse includes the phrase "But if you do not do this, and you can never do this" which is considered a fact to some extent. The very-subjectively-classified verse includes "Submit to your Lord Who created you and those who were before you". This sentence includes opinions and It is considered a fact (objective) in Islam. However, there are opposing opinions on this from people of different religions and beliefs.
 
 
 VII.SLS Analysis Conclusion 
-This is the reason why the whole sentence-level subjectivity analysis of the verses of The Holy Quran isn't mentioned in this paper. Although this test case can be applied to polarity analysis due to the tone and words of the verses used towards the opposition of Islam or wrongdoers, the analysis is only based on the words and tone used in the verses, rather than on a party to whom it may concern. 
+This is the reason for the removal of whole sentence-level subjectivity analysis of the verses of The Holy Quran isn't mentioned in this paper. Although this test case can be applied to polarity analysis due to the tone and words of the verses used towards the opposition of Islam or wrongdoers, the analysis is only based on the words and tone used in the verses, rather than on a party to whom it may concern. 
 
 
 
